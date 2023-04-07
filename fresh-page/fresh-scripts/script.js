@@ -35,18 +35,6 @@ const formattedDate = currentDate.toLocaleDateString('en-US', options2);
 // Update the date bar text to display today's date
 dateBar.textContent = `Welcome, Today's Date is ${formattedDate}.`;
 
-
-// Select the hamburger menu icon and menu list
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const menuList = document.querySelector('.menu-list');
-
-// Add an event listener to the hamburger menu icon
-hamburgerMenu.addEventListener('click', () => {
-  // Toggle the display of the menu list
-  menuList.classList.toggle('show-menu');
-});
-
-
 function openNav() {
   document.getElementById("myNav").style.width = "20%";
 }

@@ -1,0 +1,68 @@
+@media only screen and (max-width:480px) {
+
+	
+	/* Adjustments for mobile phone screen size */
+	body {
+		height: auto;
+		margin: 0;
+	}
+
+	/* Logo */
+	.logo-container img {
+		height: 60px;
+	}
+
+	/* Social Media Links */
+	.social-media-container img {
+		height: 16px;
+	}
+
+	/* Additional Styling */
+	.navigation-menu {
+		font-size: 14px;
+	}
+
+	.navigation-menu a {
+		font-size: 14px;
+		padding-bottom: 2px;
+		border-bottom: 2px solid transparent;
+	}
+
+	.navigation-menu a:hover {
+		border: 3px solid #32dc57;
+		padding: 7px;
+		border-radius: 7px;
+		background-color: #32dc57;
+	}
+
+	/* Social Media Links */
+	.social-media-container {
+		display: flex;
+		margin-right: 100px;
+	}
+
+	h1 {
+		font-size: 80px;
+		padding: 50px;
+	}
+
+	.button {
+		padding: 6px 12px;
+		font-size: 14px;
+	}
+
+	h2 {
+		font-size: 18px;
+		padding: 3px;
+	}
+
+	.date-bar {
+		display: none;
+	}
+
+	textarea {
+		height: 100px;
+		width: 200px;
+	}
+
+}

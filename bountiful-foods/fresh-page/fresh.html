@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="We conveys a sense of unity and collaboration among businesses in your community, with a focus on promoting economic growth and success for all members.">
+    <link rel="icon" href="/bountiful-foods/fresh-page/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Laila&family=Trocchi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/bountiful-foods/fresh-page/fresh-styles/large.css">
+    <link rel="stylesheet" href="/bountiful-foods/fresh-page/fresh-styles/medium.css">
+    <link rel="stylesheet" href="/bountiful-foods/fresh-page/fresh-styles/small.css">
+    <title>Bountiful Foods</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="images/logo4.png" alt="bountiful foods logo">
+        </div>
+        <div class="social-media-container">
+            <ul class="links">
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <img src="/bountiful-foods/fresh-page/images/download.jpeg" alt="Facebook Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/">
+                        <img src="/bountiful-foods/fresh-page/images/download _copy.jpeg" alt="Instagram Logo">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/login">
+                        <img src="/bountiful-foods/fresh-page/images/images.jpeg" alt="Instagram Logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p class="date-bar"> Today's Date is</p>
+        <nav>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul class="navigation-menu">
+                    <li><a href="/bountiful-foods/index.html">Home</a></li>
+
+                    <li><a href="/bountiful-foods/fresh-page/fresh.html" class="active">Fresh</a></li>
+                    <li><a href="/bountiful-foods/abbout-us/about-us.html">Contact</a></li>
+                </ul>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+        </nav>
+    </header>
+    <h1 id="pic"></h1>
+    <main>
+        <h2>Build Your Own Specialty Drink.</h2>
+        <form id="fresh-form">
+            <fieldset>
+                <legend>Enter Credentials</legend>
+                <label class="top"> First Name*<input type="text" name="fname" required> </label>
+                <label class="top"> Last Name*<input type="text" name="lname" required> </label>
+                <label class="top"> Phone<input type="tel" name="phone" placeholder="+233 123456789" required> </label>
+            </fieldset>
+
+            <fieldset>
+                <legend> Select a specialty drink:</legend>
+                <label for="fruit1">Select fruit 1:</label>
+                <select id="fruit1" name="fruit1">
+                    <option value="1">Apple</option>
+
+                </select><br><br>
+
+                <label for="fruit2">Select fruit 2:</label>
+                <select id="fruit2" name="fruit2">
+                    <option value="1">Apple</option>
+
+                </select><br><br>
+
+                <label for="fruit3">Select fruit 3:</label>
+                <select id="fruit3" name="fruit3">
+                    <option value="1">Apple</option>
+                </select><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Special Instructions</legend>
+                <div> Write Any Special Instructions Here</div>
+                <textarea id="business-description" name="business-description"></textarea>
+            </fieldset>
+            <input type="submit" value="Proceed to make Specialty Drink" class="submitBtn">
+        </form>
+
+
+        <div id="order-details"></div>
+        <p>Number of specialty drinks ordered: <span id="specialty-drinks-counter"></span></p>
+
+    </main>
+    <footer>
+        <div class="logo-container">
+            <img src="images/logo4.png" alt="bountiful foods logo">
+        </div>
+        <div class="contact-info">
+            <li>123 Main Street, Carlsbad, CA 92008</li>
+            <li>Phone: 123-456-7890</li>
+            <li>Email: info@bountifulfoods.com</li>
+        </div>
+        <p> &copy; | Bountiful Foods.| | All rights reserved | <span id="copyright-year">2023</span> | Paul Agyare |
+            Last Update :<span id="lastDayModified"> </span> </p>
+    </footer>
+    <script src="/bountiful-foods/fresh-page/fresh-scripts/script.js"></script>
+</body>
+
+</html>

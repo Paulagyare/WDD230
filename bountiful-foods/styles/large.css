@@ -1,0 +1,364 @@
+body {
+	height: 100vh;
+	margin: 0;
+}
+
+/* Header */
+header {
+	color: rgb(0, 128, 0);     /* green */
+	background-color: #0e2513;     /* black */
+	mix-blend-mode: multiply;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo-container {
+	display: flex;
+	align-items: center;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.logo-container img {
+	height: 100px;
+}
+
+/* Social Media Links */
+.social-media-container {
+	display: flex;
+	align-items: center;
+}
+
+.social-media-container ul {
+	list-style: none;
+	display: flex;
+}
+
+.social-media-container li {
+	margin-right: 10px;
+}
+
+.social-media-container img {
+	height: 25px;
+}
+
+/* Navigation Menu */
+.navigation-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 80px;
+	margin-top: 150px;
+
+	
+}
+
+.navigation-menu li {
+	margin: 0;
+}
+
+.navigation-menu a {
+	display: block;
+	padding: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 25px;
+	transition: all 0.3s ease-in-out;
+	border-radius: 10px;
+}
+
+.navigation-menu a:hover {
+	padding: 30px;
+	color: #030000;
+	border: 2px solid #32dc57;
+	background-color: #32dc57;
+}
+
+
+/* Additional Styling */
+.logo-container img:first-child {
+	margin-right: 10px;
+}
+
+
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.9);
+	overflow-x: hidden;
+	transition: 0.5s;
+  }
+  
+  .overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 90px;
+  }
+  
+  .overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #06d451;
+	display: block;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+  }
+  
+  
+h1 {
+	font-size: 150px;
+	border: #353535 2px solid;
+	padding: 200px;
+	background-image: url("../images/logo2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+main img {
+	width: 600px;
+	height: 600px;
+	object-fit: cover;
+	max-width: 100%;
+	border-radius: 20px;
+}
+
+.first {
+	display: flex;
+	justify-content: center;     /* To center the images horizontally */
+	align-items: center;     /* To center the images vertically */
+	min-width: 10px;
+	width: 500px;
+	height: 500px;
+	object-fit: cover;
+	max-width: 100%;
+	border-radius: 20px;
+	padding: 10px;
+	position: relative;     /* To make the images stackable */
+	margin-bottom: 150px;
+}
+
+div.first img {
+	position: absolute;     /* To make the images overlap */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.5s ease-out;     /* To create a smooth transition */
+	border: #0e2513 3px solid;
+}
+
+div.first img:nth-child(2) {
+	transform: translate(80%, 15%) scale(1);     /* To move the image up and to the left and scale it down */
+	z-index: -1;     /* To make the second image appear behind the other images */
+}
+
+div.first img:nth-child(3) {
+	transform: translate(172%, 25%) scale(1);     /* To move the image up and to the left and scale it down */
+	z-index: -2;     /* To make the third image appear behind the other images */
+}
+
+/* style for the buttons */
+.button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #0e2513;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.button:hover {
+	background-color: #0e2513;
+	font-size: 25px;
+}
+
+h2 {
+	padding: 10px;
+	background-color: #0e2513;
+	text-align: center;
+	font-size: 25px;
+	color: #ffffffda;
+	margin-bottom: 0;
+	text-decoration: wavy;
+}
+
+#coastal-info p {
+	font-size: 20px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	padding: 130px;
+	text-align: center;
+	background-color: rgba(154, 179, 154, 0.851);
+	margin-top: 0;
+	line-height: 1.5;
+}
+
+#fruit-drink p {
+	font-size: 21px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	padding: 130px;
+	text-align: center;
+	background-color: rgba(154, 179, 154, 0.851);
+	margin-top: 0;
+	line-height: 1.5;
+}
+
+div.image-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 80px;     /* Add your desired spacing between images */
+	width: 600px;
+	height: 600px;
+	object-fit: cover;
+	max-width: 100%;
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+
+li .active {
+	color: rgb(255, 0, 0);
+	font-weight: bold;
+	text-decoration: underline;
+	border: #09ca33 5px solid;
+	text-decoration: none;
+	font-size: 25pxpx;
+	border-style: double;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	
+}
+
+p.date-bar {
+	font-size: large;
+	font-weight: bolder;
+	color: #32dc57;
+}
+
+.closebtn {
+	display: none;
+}
+
+.openbtn {
+	display: none;
+}
+
+.weather {
+	font-size: 20px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.weather-card {
+	background-color: #32dc57;
+	border-radius: 10px;
+	padding: 80px;
+	text-align: center;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#specialty-drinks-counter {
+	font-size: 40px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.851);
+	align-items: center;
+	text-align: center;
+	border: #0e2513 5px solid;
+	border-radius: 10px;
+	padding: 20px;
+	margin-top: 10px;
+	border-style: double;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #0e2513;
+	padding: 20px;
+	font-size: 14px;
+	color: #ecdede;
+}
+
+.logo-container {
+	margin-bottom: 10px;
+}
+
+.contact-info {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.contact-info li {
+	margin-bottom: 5px;
+}
+
+#copyright-year, #lastDayModified {
+	font-weight: bold;
+	color: #ecdede;
+}
+
+#lastDayModified:before {
+	content: " ";
+	color: #ecdede;
+}
+
+footer p {
+	color: #ecdede;
+	font-size: larger;
+	font-weight: bold;
+}
+
+@media screen and (max-height: 450px) {
+	.sidebar {padding-top: 15px;}
+	.sidebar a {font-size: 18px;}
+  }
+
+  .navigation-menu a {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 15px;
+  }
+
+  li .active {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 15px;
+	
+  }

@@ -1,0 +1,377 @@
+body {
+	height: 100vh;
+	margin: 0;
+}
+
+/* Header */
+header {
+	color: rgb(0, 128, 0);     /* green */
+	background-color: #0e2513;     /* black */
+	mix-blend-mode: multiply;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo-container {
+	display: flex;
+	align-items: center;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.logo-container img {
+	height: 100px;
+}
+
+/* Social Media Links */
+.social-media-container {
+	display: flex;
+	align-items: center;
+}
+
+.social-media-container ul {
+	list-style: none;
+	display: flex;
+}
+
+.social-media-container li {
+	margin-right: 10px;
+}
+
+.social-media-container img {
+	height: 25px;
+}
+
+/* Additional Styling */
+.logo-container img:first-child {
+	margin-right: 10px;
+}
+
+/* Navigation Menu */
+.navigation-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 80px;
+	margin-top: 150px;
+
+	
+}
+
+.navigation-menu li {
+	margin: 0;
+}
+
+.navigation-menu a {
+	display: block;
+	padding: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 25px;
+	transition: all 0.3s ease-in-out;
+	border-radius: 10px;
+}
+
+.navigation-menu a:hover {
+	padding: 30px;
+	color: #030000;
+	border: 2px solid #32dc57;
+	background-color: #32dc57;
+}
+
+
+/* Additional Styling */
+.logo-container img:first-child {
+	margin-right: 10px;
+}
+
+
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.9);
+	overflow-x: hidden;
+	transition: 0.5s;
+  }
+  
+  .overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 90px;
+  }
+  
+  .overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #06d451;
+	display: block;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+  }
+  
+  
+
+li .active {
+	color: rgb(255, 0, 0);
+	font-weight: bold;
+	text-decoration: underline;
+	border: #09ca33 5px solid;
+	text-decoration: none;
+	font-size: 25px;
+	border-style: double;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	
+}
+
+.date-bar {
+	font-size: large;
+	font-weight: bolder;
+	color: #32dc57;
+}
+
+#pic {
+	font-size: 150px;
+	border: #353535 2px solid;
+	padding: 200px;
+	background-image: url("../images/logo2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+/* style for the buttons 
+.button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #0e2513;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.button:hover {
+	background-color: #0e2513;
+	font-size: 25px;
+}*/
+h2 {
+	padding: 10px;
+	background-color: #0e2513;
+	text-align: center;
+	font-size: 25px;
+	color: #ffffffda;
+	margin-bottom: 0;
+	text-decoration: wavy;
+	margin-bottom: 20px;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* -----------Form----------*/
+form fieldset {
+	margin: 2rem 0;
+	border: 1px solid #0e2513;
+	border-radius: 10px;
+	padding: .5rem 2%;
+}
+
+form legend {
+	color: #0e2513;
+	margin: 0 1rem;
+	padding: 0 .5rem;
+}
+
+form label.top, form div {
+	display: block;
+	padding-top: 1rem;
+	color: red;
+	font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+	display: block;
+	font-size: 1rem;
+	border: solid #32dc57;
+	border-radius: 5px;
+	padding: .75rem;
+	color: #0e2513;
+	width: 100%;
+	max-width: 20rem;
+	background-color: (0, 0, 0, 0, 1);
+    min-width: 50%;
+}
+
+form label.sbs {
+	display: block;
+	padding: .75rem 0;
+	color: #0e2513;
+}
+
+form input.submitBtn {
+	border: none;
+	background-color: #0e2513;
+	color: white;
+	border-radius: 1rem;
+	padding: .75rem 1.5rem;
+	margin: 0 0 2rem 2%;
+	width: 96%;
+	max-width: 20rem;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+
+form input.submitBtn:hover {
+	font-size: larger;
+	background-color: #32dc57;
+}
+
+form label.top input:required {
+	border-left: red solid 7px;
+}
+
+form label.top input:required:valid {
+	border-left: #0e2513 solid 7px;
+}
+
+select {
+	display: block;
+	font-size: 1rem;
+	border: solid#32dc57;
+	border-radius: 5px;
+	padding: .75rem;
+	color: #0e2513;
+	width: 100%;
+	max-width: 20rem;
+	background-color: (0, 0, 0, 0, 1);
+}
+
+p {
+	font-size: 20px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.851);
+	align-items: center;
+	text-align: center;
+	border: #0e2513 5px solid;
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 10px;
+	border-style: double;
+}
+
+/*
+  .submitBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .submitBtn:hover {
+    background-color: #3E8E41;
+    font-size: larger;
+  }
+  */
+
+/* Specific Styles */
+textarea {
+	height: 100px;
+	width: 500px;
+}
+
+input[type="submit"] {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #0e2513;
+	padding: 20px;
+	font-size: 14px;
+	color: #ecdede;
+}
+
+.logo-container {
+	margin-bottom: 10px;
+}
+
+.contact-info {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.contact-info li {
+	margin-bottom: 5px;
+}
+
+#copyright-year, #lastDayModified {
+	font-weight: bold;
+	color: #ecdede;
+}
+
+#lastDayModified:before {
+	content: " ";
+	color: #ecdede;
+}
+
+footer p {
+	color: #ecdede;
+}
+
+@media screen and (max-height: 450px) {
+	.sidebar {padding-top: 15px;}
+	.sidebar a {font-size: 18px;}
+  }
+
+
+  .navigation-menu a {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 15px;
+  }
+
+  li .active {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 15px;
+	
+  }

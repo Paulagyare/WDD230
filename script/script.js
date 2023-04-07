@@ -43,8 +43,6 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
-
-
 const apikey = "e866f0078b5f3cea9187dedec72d15fc";
 const city = "Carlsbad";
 const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`;
